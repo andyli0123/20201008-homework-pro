@@ -1,6 +1,6 @@
-/*¨Ï¥Î cctype¡A¿é¤J¤@¦ê­^¤å¥y¤l¡A
-±N²Ä©_¼Æ­Ó¦r§ï¦¨¤j¼g¡A²Ä°¸¼Æ­Ó¦r§ï¦¨¤p¼g¡A
-ªÅ¥Õ¤Î¼ĞÂI²Å¸¹¤£¥]§t¦b¦rªº­p¼Æ¤º¡C*/ 
+/*ä½¿ç”¨ cctypeï¼Œè¼¸å…¥ä¸€ä¸²è‹±æ–‡å¥å­ï¼Œ
+å°‡ç¬¬å¥‡æ•¸å€‹å­—æ”¹æˆå¤§å¯«ï¼Œç¬¬å¶æ•¸å€‹å­—æ”¹æˆå°å¯«ï¼Œ
+ç©ºç™½åŠæ¨™é»ç¬¦è™Ÿä¸åŒ…å«åœ¨å­—çš„è¨ˆæ•¸å…§ã€‚*/ 
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -11,7 +11,7 @@ int main(){
 	getline(cin, input);
 	int i,a=0;
 	for(i=0; i<=input.length(); i++){
-		if((input[i]>=65&&input[i]<=90)||(input[i]>=97&&input[i]<=122)){
+		if(isalpha(input[i])){
 			if(((i-a)%2)==0){
 				putchar(toupper(input[i]));
 			}else{
